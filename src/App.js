@@ -11,7 +11,7 @@ function App() {
   const [employees, setEmployees] = useState([])
 
   useEffect(() => {
-    fetch(process.env.API_URL + '/api/Employee')
+    fetch('http://localhost:5010/api/Employee')
       .then((response) => {
         return response.json()
       })
